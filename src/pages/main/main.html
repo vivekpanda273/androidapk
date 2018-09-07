@@ -1,0 +1,112 @@
+
+
+<ion-content padding>
+    
+    <ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="onInput($event)"
+    (ionCancel)="onCancel($event)">
+    
+    
+        
+    
+    
+
+    
+  </ion-searchbar>
+  <button ion-button full color="yellow"(click)="godatabase()">Search</button>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTKo9NK78DE2y7qqSq6RzvWhlyvD_dry8&callback=initMap">
+  </script>
+
+
+  <ion-card class="adv-map">
+    <div style="position: relative">
+      <img src="assets/img/konark.jpg">
+      <ion-fab right top>
+        <button ion-fab class="fab-map">
+          <ion-icon name='pin'></ion-icon>
+        </button>
+      </ion-fab>
+    </div>
+    <ion-item>
+      <ion-icon color="subtle" large item-start name=''></ion-icon>
+      <h2>Konark Temple</h2>
+    </ion-item>
+    
+    <ion-item actions>
+      <span ion-text item-start color="secondary" class="item-bold">18 min</span>
+      <span ion-text item-start color="subtle">(2.6 mi)</span>
+      <button ion-button color="primary" clear item-end icon-start>
+        <ion-icon name='navigate'></ion-icon>
+        Start
+      </button>
+    </ion-item>
+  
+  </ion-card>
+  
+  <ion-card class="adv-map">
+    <div style="position: relative">
+      <img src="assets/img/food.jpg">
+  
+      <ion-fab right top>
+        <button ion-fab color="danger" class="fab-map">
+          <ion-icon name="pin"></ion-icon>
+        </button>
+      </ion-fab>
+    </div>
+    <ion-item>
+      <ion-icon color="subtle" large item-start name='resturant'></ion-icon>
+      <h2>Yoshi's Island</h2>
+      <p>Chinese Resturant</p>
+    </ion-item>
+    <ion-item>
+      <ion-icon color="subtle" large item-start name=''></ion-icon>
+      <h2>Hindustani dhaba</h2>
+      <p>Indian Cuision</p>
+    </ion-item>
+    <ion-item actions>
+      <span ion-text item-start class="item-bold">3 hr</span>
+      <span ion-text item-start color="subtle">(4.8 mi)</span>
+      <button ion-button color="danger" clear item-end icon-start>
+        <ion-icon name='navigate'></ion-icon>
+        Start
+      </button>
+    </ion-item>
+  
+  </ion-card>
+  
+  <ion-card class="adv-map">
+    <div style="position: relative">
+      <img src="assets/img/handloom-feature.png">
+      <ion-fab right top>
+        <button ion-fab color="secondary">
+          <ion-icon name="pin"></ion-icon>
+        </button>
+      </ion-fab>
+    </div>
+    <ion-item>
+      <ion-icon color="subtle" large item-start name=''></ion-icon>
+      <h2>Sambalpuri Handloom Showroom</h2>
+      <p>
+        Near Bus stand,Konark chak,Konark
+      </p>
+    </ion-item>
+    <ion-item>
+      <ion-icon color="subtle" large item-start name=''></ion-icon>
+      <h2>Rajasthani Handloom Showroom</h2>
+      <p>Market Complex, Konark Chak</p>
+    </ion-item>
+    <ion-item actions>
+      <span ion-text item-start color="secondary" class="item-bold">26 min</span>
+      <span ion-text item-start color="subtle">(8.1 mi)</span>
+      <button ion-button color="secondary" clear item-end icon-start>
+        <ion-icon name='navigate'></ion-icon>
+        Start
+      </button>
+    </ion-item>
+  
+  </ion-card>
+
+</ion-content>

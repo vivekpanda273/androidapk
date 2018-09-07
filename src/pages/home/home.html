@@ -1,14 +1,39 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-slides pager>
+    <ion-slide>
+      <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-globe" md="md-globe" color="primary"></ion-icon>
+      </div>
+      <div>
+        <h2>Connect</h2>
+        <p>Whether you are from India or outside, you can learn and explore our cultures from any part of the world. </p>
+      </div>
+  </ion-slide>
+    <ion-slide>
+      <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-plane" md="md-plane" color="primary"></ion-icon>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <p>Explore and learn about different places and decide where to travel.</p>
+      </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+          <ion-icon ios="ios-thumbs-up" md="md-thumbs-up" color="primary"></ion-icon>
+        </div>
+        <div>
+          <h2>Contribute</h2>
+          <p>Share your experience with the world.</p>
+        </div>
+        <div class="ffh">
+            
+           <button ion-button full color="yellow"(click)="goMain()">START</button>
+         </div>
+        </ion-slide>
+
+  </ion-slides>
+  
 </ion-content>

@@ -1,5 +1,7 @@
 {
   "name": "androidapk",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
